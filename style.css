@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+/* Comment remonter vers logo "choisir un profil */
+.container-gauche {
+    height: 100%;
+    width: 30%;
+    background-color: black; 
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+/* "Choisir un profil */
+.choix {
+    color:white;
+}
+
+/* stylisation avatar */
+.avatar {
+    height: 80px;
+    width:80px;
+    border-radius: 10px;
+}
+
+.img-profil .avatar:hover{
+border: solid 2px white;
+scale: 1.5;
+}
+
+#cinephile.avatar::after {
+    content:"Cinéphile";
+    background-color: blue;
+    color: red;
+}
+.container-droit {
+    height: 100%;
+    width: 70%;
+    background-image: url('./images/autoentrepreneure.png');
+    background-size: cover;
+    background-position: center;
+    animation: change 20s infinite ease-in-out;
+}
+
+
+
+@keyframes change {
+    0% {
+        background-image: url('./images/massage.png');
+    }
+
+    25% {
+    background-image: url('./images/prof.png');
+    }  
+    
+    50% {
+        background-image: url('./images/maman.png');
+        }  
+
+    75% {
+        background-image: url('./images/animaux.png');
+    }
+
+    100% {
+        background-image: url('./images/cameleon.png');
+    }
+}
+
+
+
+.img-carrousel {
+    height: 100px;
+    width: 100px;
+    animation-name:carrouselauto;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+}
+
+
+
+/* FAIRE UN CARROUSSEL EN BACKGROUND IMAGE OU PAS
+METTRE LA DIV DROITE A DROITE
+METTRE UN AFTER SUR PROFIL POUR QUE LE NOM APPARAISSE
+
+
+ */
