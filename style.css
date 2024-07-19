@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/* stylisation générale*/
+p {
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
 .container {
     height: 100vh;
     width: 100%;
@@ -13,17 +19,12 @@
 /* Comment remonter vers logo "choisir un profil */
 .container-gauche {
     height: 100%;
-    width: 30%;
+    width: 18%;
     background-color: black; 
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    padding-left: 20px;
-}
-
-/* "Choisir un profil */
-.choix {
-    color:white;
+    align-items: center;
 }
 
 /* stylisation avatar */
@@ -38,14 +39,71 @@ border: solid 2px white;
 scale: 1.5;
 }
 
-#cinephile.avatar::after {
-    content:"Cinéphile";
-    background-color: blue;
-    color: red;
+#cinephile {
+    position: relative;
 }
+
+#cinephile:hover::after {
+    content:"Cinéphile";
+    color: white;
+    position: absolute;
+    bottom: 40%;
+    left: 150%;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+#yogini {
+    position: relative;
+}
+
+#yogini:hover::after {
+    content:"Yogini";
+    color: white;
+    position: absolute;
+    bottom: 40%;
+    left: 150%;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#petlover {
+    position: relative;
+}
+
+#petlover:hover::after {
+    content:"Petlover";
+    color: white;
+    position: absolute;
+    bottom: 40%;
+    left: 150%;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#lectrice {
+    position: relative;
+}
+
+#lectrice:hover::after {
+    content:"Lectrice";
+    color: white;
+    position: absolute;
+    bottom: 40%;
+    left: 150%;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 .container-droit {
     height: 100%;
-    width: 70%;
+    width: 82%;
     background-image: url('./images/autoentrepreneure.png');
     background-size: cover;
     background-position: center;
@@ -76,8 +134,6 @@ scale: 1.5;
     }
 }
 
-
-
 .img-carrousel {
     height: 100px;
     width: 100px;
@@ -87,10 +143,3 @@ scale: 1.5;
 }
 
 
-
-/* FAIRE UN CARROUSSEL EN BACKGROUND IMAGE OU PAS
-METTRE LA DIV DROITE A DROITE
-METTRE UN AFTER SUR PROFIL POUR QUE LE NOM APPARAISSE
-
-
- */

@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+}
+
+.enfant {
+    height: 100%;
+    width: 50%;
+    border: solid;
+    /* pour centrer le texte car h1,p et a sont enfants de .enfant  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* jouer sur espacement attention espacement vertical entre h1,p et a*/
+    gap: 20px;
+}
+
+/* ici on appelle p car on a un seul p  espacement de chaque coté*/
+p {
+    width: 50%;
+}
+
+#aqua {
+    background-color: aqua;
+}
+
+/* image cornet de glace */
+#blue {
+    background-color: blue; 
+    background-image: url('image-gallery-cone.jpg');
+    background-size: cover;
+    background-position-y: 1076px;;
+}
+
+#green {
+    background-color: green;
+}
+
+#ygreen {
+    background-color: yellowgreen;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#orangered {
+    background-color: orangered;
+}

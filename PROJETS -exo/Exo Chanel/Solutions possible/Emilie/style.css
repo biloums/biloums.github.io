@@ -1,0 +1,105 @@
+
+/* TOUJOURS LE METTRE */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: hsl(30, 38%, 92%);
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+}
+
+
+.container {
+    width: 600px;
+    height: 50px;
+}
+
+h2,p,button{
+    padding: 10px;
+}
+
+h2 {
+    text-transform:uppercase;
+    font-size :small;
+    letter-spacing : 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    height: 100%;
+    width: 50%;
+}
+
+.image {
+    height: 400px;
+    width: 500%;
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px 0 0 30px;
+}
+
+.texte {
+    background-color: white;
+    height: 400px;
+    width: 500%;
+    padding: 20px;
+    border-radius: 0 30px 30px 0;
+}
+
+.description {
+    line-height: 2;
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+    padding-left: 10px;
+    }
+
+p{
+    font-size: 14px;
+}
+
+.remise {
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+    font-size:20px;
+    font-family: "Fraunces", serif;
+}
+
+.tarif {
+    text-decoration:line-through;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.promo {
+    display: flex;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    padding: 8px 70px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+img {
+    margin-right: 5px;
+}

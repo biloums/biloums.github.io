@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    background-image: url(./IMAGES/VACANCES.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: pacifico;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+}
+
+h2,footer,p {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: larger;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    width: 1300px;
+    margin: 0 auto;
+    gap:20px;
+}
+
+.plages{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+h3 {
+    font-size: 40px;
+    background-color: rgba(128, 128, 128, 0.39);
+}   
+
+#cuba {
+background-image: url('./IMAGES/PLAGE\ CUBA.jpg');
+background-size: cover;
+}
+
+#thailande {
+    background-image: url('./IMAGES/PLAGE\ THAILANDE.jpg');
+    background-size: cover;
+}
+
+#cap-vert {
+background-image: url('./IMAGES/PLAGE\ CAP\ VERT.jpg');
+background-size: cover;
+}
+
+.plages {
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.plages:hover
+{
+cursor: pointer;
+border : 2px solid  rgb(0, 204, 255);
+}
+
+
+.fleche {
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    bottom: 50px;
+    right:50px;
+}
+
+.flechetop {
+    height: 60px;
+    width: 60px;
+}
+
+footer {
+    background-color: rgb(0, 204, 255);
+    padding: 1%
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+main {
+    height: 100%;
+    width: 100%;
+}
+}

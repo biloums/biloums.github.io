@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* grandir tourner changer de couleur à l'infini */
+.carre{
+    height: 200px;
+    width: 200px;
+    background-color: indigo;
+    margin: 200px auto;
+    animation: animation 4s infinite; 
+}
+    
+/* nom d'animation qu'on appelle comme on veut ici apppelé animation */
+    @keyframes animation {
+        0%   {background-color: indigo;}
+        50%  {background-color: darkblue; transform: scale(1.5) rotate(360deg);}
+        100% {background-color: darkred;}
+    }
+
+
+/* scale est un zoom ATTENTION METTRE UN POINT ET NON VIRGULE POUR 1.5*/
