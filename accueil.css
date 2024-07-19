@@ -1,3 +1,11 @@
+/* root personnaliser font et couleurs appeler ensuite par var  */
+
+:root {
+    --monrouge : #E50914;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -451,7 +459,7 @@ footer{
     font-size: small;
 }
 
- footer {
+footer {
     display: flex;
     justify-content: center;
     align-items: center ;
