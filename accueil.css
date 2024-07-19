@@ -62,8 +62,13 @@ nav {
 }
 
 main {
-    display: flex;
+    flex-direction: column;
     padding-left: 30px;
+}
+
+.contflex {
+    width: 100%;
+    display: flex;
 }
 
 .container-gauche {
