@@ -1,19 +1,20 @@
-/* root personnaliser font et couleurs appeler ensuite par var  */
-
+/* stylisation générale*/
 :root {
-    --monrouge : #E50914;
+    --noir :#130E0A;
+    --rouge :#E50914;
+    --blanc: #FBFCFA;
+    --gris : #2D2D2D;
 }
 
-
-
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+
 body {
-    background-color: black;
+    background-color: var(--noir);
 }
 
 html {
@@ -30,21 +31,21 @@ html {
 .btn-nav {
     border-radius: 15px;
     padding: 5px 10px;
-    color: white;
-    background-color: black;
+    color: var(--blanc);
+    background-color: var(--noir);
     border: none;
     font-family: 'Inter';
 }
 
 .btn-nav:hover {
-background-color: white;
-color: black;
+background-color:var(--blanc);
+color: var(--noir);
 }
 
 .menu {
     height: 15vh;
     width: 100%;
-    background-color:black;
+    background-color:var(--noir);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,7 +60,7 @@ color: black;
 }
 
 .profilselect:hover {
-    border: solid 2px white;
+    border: solid 2px var(--blanc);
 }
 
 
@@ -82,7 +83,7 @@ main {
 .container-gauche {
     height: 85vh;
     width: 50%;
-    background-color: black;
+    background-color: var(--noir);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +104,7 @@ main {
         font-weight: 400;
         font-style: normal;
       }
-    color: white;
+    color: var(--blanc);
     letter-spacing: 2px;
     font-weight: 100;
     display: flex;
@@ -112,7 +113,7 @@ main {
 }
 
 .sonia-dev span {
-    background-color: #E50914;
+    background-color: var(--rouge);
     padding: 0 15px;
     margin-top: 8px;
     font-size: 2em;
@@ -147,8 +148,8 @@ h4 {
 
 .dev {
     text-transform: uppercase;
-    color: white;
-    background-color: #E50914;
+    color: var(--blanc);
+    background-color: var(--rouge);
     width: fit-content;
 }
 
@@ -160,21 +161,21 @@ h4 {
 
 .liens-contact a{
 text-decoration: none;
-color: white;
+color: var(--blanc);
 margin-top: 0;
 padding-top: 0;
 }
 
 .lien-contact,a:hover {
-    text-decoration: underline #E50914 2px;
-    color: white;
+    text-decoration: underline var(--rouge) 2px;
+    color: var(--blanc);
 }
 .point {
     padding-top:0;
 }
 
 p {
-    color: white;
+    color: var(--blanc);
     font-family: 'Inter';
     padding: 10px;
 }
@@ -190,7 +191,7 @@ p {
 display: flex;
     height: 45vh;
     width: 100%;
-    background-color: black;
+    background-color: var(--noir);
     justify-content: space-evenly;
     padding: 20px;
 }
@@ -205,28 +206,28 @@ display: flex;
 .btn-parcours {
     border-radius: 15px;
     padding: 5px 10px;
-    color: black;
+    color: var(--noir);
     background-color:white; 
 }
 
 .btn-parcours:hover {
-    background-color: #E50914;
+    background-color: var(--rouge);
 }
 
 h4 {
-    color: white;
+    color: var(--blanc);
     font-family: 'Inter';
 }
 
 h2 {
-    color: white;
+    color: var(--blanc);
     font-family: 'Inter';
     padding: 20px 10px  ;
-    background-color: black;
+    background-color: var(--noir);
 }
 
 h3 {
-    color: white;
+    color: var(--blanc);
     font-family: 'inter';
     padding-bottom: 30px;
 }
@@ -251,7 +252,7 @@ h3 {
 .periode {
     height: 40px;
     width: 150px;
-    background-color: #2D2D2D;
+    background-color: var(--gris);
     border-radius: 0 0 10px 10px;
     padding: 2px 22px;
 }
@@ -259,7 +260,7 @@ h3 {
 .competences {
     height: 45vh;
     width: 100%;
-    background-color:black;
+    background-color:var(--noir);
 }
 
 @keyframes  scroll{
@@ -281,7 +282,7 @@ h3 {
     width: auto;
     position: relative;
     overflow: hidden;
-    background-color: black;
+    background-color: var(--noir);
 }
 
 .carrousel .automatique {
@@ -299,14 +300,14 @@ width: calc(200px * 20);
 .top-projets {
     min-height:100vh;
     width: 100%;
-    background-color: black;
+    background-color: var(--noir);
 }
 
 
 .container1-projets,.container2-projets {
 height: 50%;
 width: 100%;
-background-color: black;
+background-color: var(--noir);
 }
 
 .container1-projets {
@@ -332,7 +333,7 @@ background-color: black;
 .contact {
     height: 100vh;
     width: 100%;
-    background-color: #E50914;
+    background-color: var(--rouge);
     display: flex;
 }
 
@@ -343,7 +344,7 @@ background-color: black;
 
 #p1::before {
     content: "1";
-    color:#2D2D2D;
+    color:var(--gris);
     font-size: 280px;
     position: absolute;
     right: 144px;
@@ -353,7 +354,7 @@ background-color: black;
 
 #p2::before {
     content: "2";
-    color:#2D2D2D;
+    color:var(--gris);
     font-size: 280px;
     position: absolute;
     right: 173px;
@@ -363,7 +364,7 @@ background-color: black;
 
 #p3::before {
     content: "3";
-    color:#2D2D2D;
+    color:var(--gris);
     font-size: 280px;
     position: absolute;
     right: 165px;
@@ -373,7 +374,7 @@ background-color: black;
 
 #p4::before {
     content: "4";
-    color:#2D2D2D;
+    color:var(--gris);
     font-size: 280px;
     position: absolute;
     right: 174px;
@@ -383,7 +384,7 @@ background-color: black;
 
 #p5::before {
     content: "5";
-    color:#2D2D2D;
+    color:var(--gris);
     font-size: 280px;
     position: absolute;
     right: 177px;
@@ -393,7 +394,7 @@ background-color: black;
 
 #p6::before {
     content: "6";
-    color: #2D2D2D;
+    color: var(--gris);
     font-size: 280px;
     position: absolute;
     right: 183px;
@@ -404,7 +405,7 @@ background-color: black;
 
 .projet{
     position: relative;
-    box-shadow: 0px 0px 15px 0 #E50914;
+    box-shadow: 0px 0px 15px 0 var(--rouge);
 }
 
 .container-contact {
@@ -416,7 +417,7 @@ background-color: black;
 .affiche-form {
     height: 100%;
     width: 50%;
-    background-color: black;
+    background-color: var(--noir);
 }
 
 .affiche-form img {
@@ -427,13 +428,13 @@ background-color: black;
 .formulaire {
     height:100%;
     width: 50%;
-    background-color: black;
+    background-color: var(--noir);
 }
 
 input[type=text], textarea, input[type=email] {
     width: 100%;
     padding: 12px;
-    border: 1px solid black;
+    border: 1px solid var(--noir);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -447,12 +448,12 @@ label{
     margin-right: 0px;
     margin-left: 0px;
     width: 100%;
-    color: white;
+    color: var(--blanc);
     font-family: 'Inter';
 }
 
 input[type=submit] {
-    background-color: white;
+    background-color:var(--blanc);
     padding: 5px 10px;
     border: none;
     border-radius: 15px;
@@ -461,13 +462,13 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #E50914;
+    background-color: var(--rouge);
 }
 
 .container {
     box-sizing : border-box;
     border-radius:5px;
-    background-color:black;
+    background-color:var(--noir);
     width: 100%;
     max-width: 440px;
     margin:0 auto;
@@ -476,14 +477,14 @@ input[type=submit]:hover {
 footer{
     height: 5vh;
     width: 100%;
-    background-color: #E50914;
+    background-color: var(--rouge);
     display: flex;
     justify-content: center;
     align-items: center ;
 }
 
 .copyright p {
-    color: white;
+    color: var(--blanc);
     font-size: small;
 }
 
