@@ -97,7 +97,12 @@ main {
 
 .sonia-dev {
     text-transform: uppercase;
-    font-family: "Compacta";
+    font-family: 'Compacta','Bebas Neue',sans-serif;
+    bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
     color: white;
     letter-spacing: 2px;
     font-weight: 100;
@@ -111,18 +116,21 @@ main {
     padding: 0 15px;
     margin-top: 8px;
     font-size: 2em;
+    font-family: 'Compacta';
 }
 
 h1.sonia-dev::before {
     content: 'sonia';
     padding-right: 5px;
     font-size: 3.3em;
+    font-family: 'Compacta';
 }
 
 h1.sonia-dev::after {
     content: 'fullstack';
     padding-left: 5px;
     font-size: 3.3em;
+    font-family: 'Compacta';
 }
 
 
@@ -230,7 +238,15 @@ h3 {
 }
 .carte img {
     height: 150px;
+    width: 150px;
     border-radius: 10px;
+}
+
+.periode {
+    background-color: #2D2D2D;
+    border-radius: 10px;
+    padding: 2px 22px;
+    box-shadow: 0px 0px 0px 0 #E50914;
 }
 
 .competences {
@@ -303,6 +319,7 @@ background-color: black;
     height: 200px;
     z-index: 2;
     position: relative;
+    border-radius: 10px;
 }
 
 .contact {
