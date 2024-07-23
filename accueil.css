@@ -12,7 +12,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: var(--noir);
 }
@@ -21,7 +20,23 @@ html {
     scroll-behavior: smooth;
 }
 
-/* stylisation générale */
+.conteneur {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+}
+
+/* menu */
+.profilselect {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.profilselect:hover {
+    border: solid 2px var(--blanc);
+}
+
 .liens a {
     margin: 15px;
     font-family: 'Inter';
@@ -52,24 +67,22 @@ color: var(--noir);
     padding: 15px;
 }
 
-
-.profilselect {
-    height: 60px;
-    width: 60px;
-    border-radius: 10px;
-}
-
-.profilselect:hover {
-    border: solid 2px var(--blanc);
-}
-
-
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Eléments du conteneur droit */
+.conteneur-droit {
+    height: 85vh;
+    width: 50%;
+    background-image: url('./images/dev.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* le contenu principal */
 main {
     flex-direction: column;
     padding-left: 30px;
@@ -80,7 +93,8 @@ main {
     display: flex;
 }
 
-.container-gauche {
+/* Elements du conteneur gauche, section "Accueil */
+.conteneur-gauche {
     height: 85vh;
     width: 50%;
     background-color: var(--noir);
@@ -96,6 +110,7 @@ main {
     margin: 0px 15px;
 }
 
+/* mon titre Sonia dev full stack */
 .sonia-dev {
     text-transform: uppercase;
     font-family: 'Compacta','Bebas Neue',sans-serif;
@@ -134,30 +149,10 @@ h1.sonia-dev::after {
     font-family: 'Compacta';
 }
 
-
-h4 {
-    margin-top: 20px;
-}
-.container-droit {
-    height: 85vh;
-    width: 50%;
-    background-image: url('./images/dev.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.dev {
-    text-transform: uppercase;
-    color: var(--blanc);
-    background-color: var(--rouge);
-    width: fit-content;
-}
-
-
+/* mes liens mail,linkedin,cv */
 .liens-contact {
     display: flex;
 }
-
 
 .liens-contact a{
 text-decoration: none;
@@ -172,6 +167,13 @@ padding-top: 0;
 }
 .point {
     padding-top:0;
+}
+
+/* ma présentation */
+h4 {
+    margin-top: 20px;
+        color: var(--blanc);
+        font-family: 'Inter';
 }
 
 p {
@@ -214,11 +216,7 @@ display: flex;
     background-color: var(--rouge);
 }
 
-h4 {
-    color: var(--blanc);
-    font-family: 'Inter';
-}
-
+/* Section "parcours */
 h2 {
     color: var(--blanc);
     font-family: 'Inter';
@@ -226,16 +224,11 @@ h2 {
     background-color: var(--noir);
 }
 
-h3 {
-    color: var(--blanc);
-    font-family: 'inter';
-    padding-bottom: 30px;
-}
-
 .parcours {
     margin-bottom: 20px;
 }
 
+/* Section "expérience" */
 .experience {
     display: flex;
     flex-direction: column;
@@ -248,7 +241,6 @@ h3 {
     margin-bottom: -4px;
 }
 
-
 .periode {
     height: 40px;
     width: 150px;
@@ -257,6 +249,7 @@ h3 {
     padding: 2px 22px;
 }
 
+/* Section "compétences" */
 .competences {
     height: 45vh;
     width: 100%;
@@ -296,28 +289,27 @@ width: calc(200px * 20);
     width: 250px;
 }
 
-
+/* section "projets */
 .top-projets {
     min-height:100vh;
     width: 100%;
     background-color: var(--noir);
 }
 
-
-.container1-projets,.container2-projets {
+.conteneur1-projets,.conteneur2-projets {
 height: 50%;
 width: 100%;
 background-color: var(--noir);
 }
 
-.container1-projets {
+.conteneur1-projets {
     display: flex;
     justify-content: space-around;
     margin-bottom: 60px;
     padding-top: 20px;
 }
 
-.container2-projets {
+.conteneur2-projets {
     display: flex;
     justify-content: space-around;
 }
@@ -328,18 +320,6 @@ background-color: var(--noir);
     z-index: 2;
     position: relative;
     border-radius: 10px;
-}
-
-.contact {
-    height: 100vh;
-    width: 100%;
-    background-color: var(--rouge);
-    display: flex;
-}
-
-.image-contact {
-    height: 100vh;
-    width: 50%;
 }
 
 #p1::before {
@@ -402,27 +382,28 @@ background-color: var(--noir);
     font-family: 'Netflix sans';
 }
 
-
 .projet{
     position: relative;
     box-shadow: 0px 0px 15px 0 var(--rouge);
 }
 
-.container-contact {
+/* formulaire de contact */
+.conteneur-contact {
     height: 85vh;
     width: 100%;
     display: flex;
+    
 }
 
 .affiche-form {
     height: 100%;
     width: 50%;
     background-color: var(--noir);
+    padding-left: 190px;
 }
 
 .affiche-form img {
     height: 470px;
-    padding: 0;
 }
 
 .formulaire {
@@ -465,15 +446,15 @@ input[type=submit]:hover {
     background-color: var(--rouge);
 }
 
-.container {
+.conteneur-formulaire {
     box-sizing : border-box;
     border-radius:5px;
     background-color:var(--noir);
     width: 100%;
     max-width: 440px;
-    margin:0 auto;
 }
 
+/* pied de page */
 footer{
     height: 5vh;
     width: 100%;
@@ -488,6 +469,7 @@ footer{
     font-size: small;
 }
 
+/* scroll */
 .fleche-haut {
     height: 40px;
     width: 40px;
