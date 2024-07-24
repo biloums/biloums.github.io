@@ -79,13 +79,13 @@ nav {
     width: 30px;
     position: absolute;
     top: 40px;
-    right: 100px;
+    right: 50px;
     display: none;
 }
 
 /* Eléments du conteneur droit */
 .conteneur-droit {
-    min-height: 85vh;
+    height: 85vh;
     width: 50%;
     background-image: url('./images/dev.png');
     background-size: cover;
@@ -493,25 +493,43 @@ footer{
 
 /* version mobile */
 @media screen and (max-width : 767px) {
+    main {
+        padding: 0;
+        margin: 0;
+    }
+    .profilselect {
+        margin-left: 40px;
+    }
+    
     .liens {
         display: none;
     }
     
     .menu-burger {
-       display: block; 
+        display: block; 
     }
 
     .contflex {
-        display: flex;
         flex-direction: column;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    .conteneur-gauche {
+        width: 100%;
+        background-image: url('./images/dev.png');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .conteneur-droit {
+        display: none;
     }
 
     .apropos {
         height: 300px;
-    }
-
-    .conteneur-droit {
-        display: none;
     }
 
     .parcours {
@@ -534,9 +552,9 @@ footer{
         display: none;
     }
 
-        .conteneur-contact {
-            align-items: center;
-            justify-content: center;
+    .conteneur-contact {
+        align-items: center;
+        justify-content: center;
         }
    
 
