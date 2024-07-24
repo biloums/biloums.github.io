@@ -71,6 +71,16 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.menu-burger {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    display: none;
 }
 
 /* Eléments du conteneur droit */
@@ -483,5 +493,40 @@ footer{
 
 /* version mobile */
 @media screen and (max-width : 767px) {
+    .liens {
+        display: none;
+    }
     
+    .menu-burger {
+       display: block; 
+    }
+
+    .contflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apropos {
+        height: 300px;
+    }
+
+    .conteneur-droit {
+        display: none;
+    }
+
+    .parcours {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .conteneur1-projets,.conteneur2-projets {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .projet img {
+        float: right;
+    }
 }
