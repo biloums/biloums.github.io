@@ -525,8 +525,20 @@ footer{
         flex-direction: column;
         gap: 15px;
     }
-
+    /*images section "Projets */
     .projet img {
         float: right;
     }
+
+    .affiche-form {
+        display: none;
+    }
+
+   
+
 }
+
+
+
+
+
