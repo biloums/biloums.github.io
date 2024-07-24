@@ -518,6 +518,10 @@ footer{
         height: 300px;
     }
 
+    .btn-parcours {
+        margin-top: 30px;
+    }
+
     .parcours {
         display: flex;
         flex-direction: column;
@@ -547,8 +551,6 @@ footer{
         align-items: center;
         justify-content: center;
         }
-   
-
 }
 
 
