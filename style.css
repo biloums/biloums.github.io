@@ -165,4 +165,37 @@ scale: 1.5;
 .conteneur-gauche {
     width: 80%;
 }
+
+#cinephile:after {
+    content:"Cinéphile";
+    color: var(--blanc);
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+#petlover:after {
+    content:"Petlover";
+    color: var(--blanc);
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+#yogini:after {
+    content:"Yogini";
+    color: var(--blanc);
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+#lectrice:after {
+    content:"Lectrice";
+    color: var(--blanc);
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
 }
