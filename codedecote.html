@@ -1,0 +1,38 @@
+/* mon titre Sonia dev full stack */
+.sonia-dev {
+    text-transform: uppercase;
+    font-family: 'Compacta','Bebas Neue',sans-serif;
+    bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    color: var(--blanc);
+    letter-spacing: 2px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sonia-dev span {
+    background-color: var(--rouge);
+    padding: 0 15px;
+    margin-top: 8px;
+    font-size: 2em;
+    font-family: 'Compacta';
+}
+
+h1.sonia-dev::before {
+    content: 'sonia';
+    padding-right: 5px;
+    font-size: 3.3em;
+    font-family: 'Compacta';
+}
+
+h1.sonia-dev::after {
+    content: 'fullstack';
+    padding-left: 5px;
+    font-size: 3.3em;
+    font-family: 'Compacta';
+}

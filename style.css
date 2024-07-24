@@ -22,7 +22,10 @@
 p {
     color: white;
     font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+
 
 /* Eléments du conteneur gauche */
 .conteneur-gauche {
@@ -154,7 +157,7 @@ scale: 1.5;
 
 /* version mobile */
 @media screen and (max-width : 767px) {
-  .conteneur-droit {
+.conteneur-droit {
     display: none;  
 }
 .conteneur { 
@@ -197,5 +200,4 @@ scale: 1.5;
     top: 35px;
     left: 100px;
 }
-
 }
