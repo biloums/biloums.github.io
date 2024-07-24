@@ -514,7 +514,7 @@ footer{
     }
 
     h1 {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .conteneur-gauche {
@@ -544,10 +544,15 @@ footer{
         gap: 15px;
     }
     /*images section "Projets */
+    .projet{
+        box-shadow: none;
+    }
     .projet img {
         float: right;
+        box-shadow: 0px 0px 15px 0 var(--rouge);
     }
 
+    /* section "Formulaire" */
     .affiche-form {
         display: none;
     }
