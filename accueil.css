@@ -167,7 +167,7 @@ h1.sonia-dev::after {
 
 .liens-contact a{
 text-decoration: none;
-margin-top: 0;
+margin: 0 10px;
 padding-top: 0;
 }
 
@@ -175,6 +175,7 @@ padding-top: 0;
     text-decoration: underline var(--rouge) 2px;
     color: var(--blanc);
 }
+
 .point {
     padding-top:0;
 }
@@ -332,7 +333,7 @@ background-color: var(--noir);
     position: absolute;
     right: 144px;
     bottom: -58px;
-    font-family: 'Netflix sans';
+    
 }
 
 #p2::before {
@@ -342,7 +343,6 @@ background-color: var(--noir);
     position: absolute;
     right: 173px;
     bottom: -58px;
-    font-family: 'Netflix sans';
 }
 
 #p3::before {
@@ -352,7 +352,6 @@ background-color: var(--noir);
     position: absolute;
     right: 165px;
     bottom: -58px;
-    font-family: 'Netflix sans';
 }
 
 #p4::before {
@@ -362,7 +361,6 @@ background-color: var(--noir);
     position: absolute;
     right: 174px;
     bottom: -58px;
-    font-family: 'Netflix sans';
 }
 
 #p5::before {
@@ -372,7 +370,6 @@ background-color: var(--noir);
     position: absolute;
     right: 177px;
     bottom: -58px;
-    font-family: 'Netflix sans';
 }
 
 #p6::before {
@@ -382,7 +379,6 @@ background-color: var(--noir);
     position: absolute;
     right: 183px;
     bottom: -58px;
-    font-family: 'Netflix sans';
 }
 
 .projet{
@@ -523,7 +519,6 @@ footer{
         margin-bottom: 90px;
     }
 
-
     .btn-parcours {
         margin-top: 50px;
     }
@@ -534,15 +529,42 @@ footer{
         gap: 15px;
     }
 
+/*images section "Projets */
     .conteneur1-projets,.conteneur2-projets {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        gap: 40px;
     }
-    /*images section "Projets */
+
+    #p1::before {
+        display: none;
+    }
+
+    #p2::before {
+        display: none;
+    }
+
+    #p3::before {
+        display: none;
+    }
+
+    #p4::before {
+        display: none;
+    }
+
+    #p5::before {
+        display: none;
+    }
+
+    #p6::before {
+        display: none;
+    }
+
     .projet{
         box-shadow: none;
     }
+
     .projet img {
         float: right;
         margin-right: 10px;
@@ -562,5 +584,5 @@ footer{
 
 
 
-/* revoir font chiffres projets et menu burger */
+/*comment faire retour à la ligne conteneur 1 et 2 projets et menu burger */
 
