@@ -21,7 +21,7 @@ html {
     scroll-behavior: smooth;
 }
 
-p, .liens a, .liens-contact a, .btn-nav, h2,h4, label {
+p, .liens a, .liens-contact a, .btn-nav, h2,h4, label,.btn-burger {
     color: var(--blanc);
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -50,7 +50,7 @@ p, .liens a, .liens-contact a, .btn-nav, h2,h4, label {
     text-decoration: none;
 }
 
-.btn-nav {
+.btn-nav, .btn-burger {
     border-radius: 15px;
     padding: 5px 10px;
     background-color: var(--noir);
@@ -79,7 +79,39 @@ nav {
     position: relative;
 }
 
-.menu-burger {
+/* menu burger */
+/* METTRE 0PX DE HEIGHT PUIS 250PX */
+.menuburger .ouverture {
+    height: 250px;
+}
+
+
+.menuburger {
+    width: 150px;
+    background-color: rgba(252, 9, 9, 0.164);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    position: absolute;
+    right: 40px;
+    top: 100px;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menuburger a {
+    text-decoration: none;
+}
+
+.menuburger,.btn-burger {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 10px;
+    display: none;
+}
+
+
+/* icône du menu burger */
+.icone-burger {
     height: 30px;
     width: 30px;
     position: absolute;
@@ -171,7 +203,7 @@ margin: 0 10px;
 padding-top: 0;
 }
 
-.lien-contact,a:hover {
+.contflex a:hover {
     text-decoration: underline var(--rouge) 2px;
     color: var(--blanc);
 }
@@ -236,14 +268,14 @@ h2 {
 
 .carte img {
     height: 200px;
-    width: 150px;
+    width: 160px;
     border-radius: 10px 10px 0 0;
     margin-bottom: -4px;
 }
 
 .periode {
     height: 40px;
-    width: 150px;
+    width: 160px;
     background-color: var(--gris);
     border-radius: 0 0 10px 10px;
     padding: 2px 22px;
@@ -490,7 +522,7 @@ footer{
         display: none;
     }
     
-    .menu-burger {
+    .icone-burger,.menuburger, .btn-burger {
         display: block; 
     }
 
@@ -534,7 +566,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 30px;
     }
 
     #p1::before {
