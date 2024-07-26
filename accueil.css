@@ -91,7 +91,6 @@ nav {
     background-color: rgba(252, 9, 9, 0.164);
     backdrop-filter: blur(4px);
     border-radius: 10px;
-    position: absolute;
     right: 40px;
     top: 100px;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
