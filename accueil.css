@@ -21,7 +21,7 @@ html {
     scroll-behavior: smooth;
 }
 
-p, .liens a, .liens-contact a, .btn-nav, h2,h4, label,.btn-burger {
+p, .nav a, .liens-contact a, .btn-nav, h2,h4, label {
     color: var(--blanc);
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -45,12 +45,12 @@ p, .liens a, .liens-contact a, .btn-nav, h2,h4, label,.btn-burger {
     border: solid 2px var(--blanc);
 }
 
-.liens a {
+.nav a {
     margin: 15px;
     text-decoration: none;
 }
 
-.btn-nav, .btn-burger {
+.btn-nav {
     border-radius: 15px;
     padding: 5px 10px;
     background-color: var(--noir);
@@ -80,43 +80,45 @@ nav {
 }
 
 /* menu burger */
-/* METTRE 0PX DE HEIGHT PUIS 250PX */
-.menuburger .ouverture {
-    height: 250px;
+.iconeburger img {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+    display: none;
 }
 
-
+/* objectif height = 0 pur qu'il disparait et réapparait avec la class ouverture */
 .menuburger {
-    width: 150px;
-    background-color: rgba(252, 9, 9, 0.164);
-    backdrop-filter: blur(4px);
-    border-radius: 10px;
-    right: 40px;
-    top: 100px;
+    background-color: #c90808b2;
+    backdrop-filter: blur(3px);
+    width: 130px;
+    border-radius: 15px;
+    flex-direction: column;
+    position: absolute;
+    right: 85px;
+    top: 80px;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .menuburger a {
-    text-decoration: none;
+text-decoration: none;
+color: var(--blanc);
+font-family: "Inter", sans-serif;
+font-size: small;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-.menuburger,.btn-burger {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    margin: 10px;
+.icone-burger, .menuburger {
     display: none;
 }
 
-
-/* icône du menu burger */
-.icone-burger {
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    top: 40px;
-    right: 50px;
-    display: none;
+.menuburger .ouverture {
+    height: 185px;
 }
 
 /* Eléments du conteneur droit */
@@ -517,12 +519,13 @@ footer{
         margin-left: 40px;
     }
     
-    .liens {
+    .nav {  
         display: none;
     }
-    
-    .icone-burger,.menuburger, .btn-burger {
-        display: block; 
+
+/* mernu burger */
+    .iconeburger img, .menuburger {
+        display: block;
     }
 
     .contflex {

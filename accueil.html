@@ -22,7 +22,7 @@
                 <a href="./index.html">
                 <img class="profilselect" src="./images/multi-profils.png" alt="icône contenant plusieurs avatars"></a>
             </div>
-            <div class="liens">
+            <div class="nav">
                 <a id="accueil" href=""><button class="btn-nav">Accueil</button></a>
                 <a href="#parcours"><button class="btn-nav">Parcours</button></a>
                 <a href="#competences"><button class="btn-nav">Compétences</button></a>
@@ -30,14 +30,16 @@
                 <a href="#contact"><button class="btn-nav">Contact</button></a>
             </div>           
         </div>
-        <img class="icone-burger" src="./images/menuburger.svg" alt="menu hamburger">
-        <div class="menuburger">
-            <a id="accueil" href=""><button class="btn-burger">Accueil</button></a>
-            <a href="#parcours"><button class="btn-burger">Parcours</button></a>
-            <a href="#competences"><button class="btn-burger">Compétences</button></a>
-            <a href="#projets"><button class="btn-burger">Projets</button></a>
-            <a href="#contact"><button class="btn-burger">Contact</button></a>
-        </div> 
+        <div class="iconeburger">
+            <img src="./images/iconmenuburger.png" alt="icône menu burger">
+        </div>
+        <div class="menuburger .ouvert">
+            <a id="accueil" href="">Accueil</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
     <main>
         <div class="contflex">
@@ -139,9 +141,17 @@
     <footer>
         <div class="copyright"><p>&copy;Sonia BOLIVARD - 2024</p></div>
     </footer>
-</body>
+
     <script>
-        const bur
+        const menuBurger = document.querySelector('.menuburger')
+        const iconeBurger = document.querySelector('iconeburger"')
+        
+        menuBurger.onclick = function(){
+            menuBurger.classList.toogle('ouvert')
+            const ouverture = menuBurger.classList.contains('ouvert')
+            iconeBurger.classList = ouverture ?'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        }
     </script>
+</body>
 </html>
 
