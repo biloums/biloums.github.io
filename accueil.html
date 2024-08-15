@@ -30,10 +30,10 @@
                 <a href="#contact"><button class="btn-nav">Contact</button></a>
             </div>           
         </div>
-        <div class="iconeburger">
+        <div id="iconeburger">
             <img src="./images/iconmenuburger.png" alt="icône menu burger">
         </div>
-        <div class="menuburger .ouvert">
+        <div id="menuburger" class="visible">
             <a id="accueil" href="">Accueil</a>
             <a href="#parcours">Parcours</a>
             <a href="#competences">Compétences</a>
@@ -47,7 +47,7 @@
                 <img class="logo" src="./images/LogoSonia.svg" alt="logo Sonia Bolivard">
                 <h1 class="sonia-dev"><span>Dev</span></h1>
                 <div class="liens-contact">
-                    <a href="mailto:biloums@gmail.com" >Mail</a>
+                    <a href="mailto:sb.devfullstack@gmail.com" >Mail</a>
                     <p class="point">•</p>
                     <a href="https://www.linkedin.com/in/soniabolivard-sosundari/">LinkedIn</a>
                     <p class="point">•</p>
@@ -141,17 +141,20 @@
     <footer>
         <div class="copyright"><p>&copy;Sonia BOLIVARD - 2024</p></div>
     </footer>
-
     <script>
-        const menuBurger = document.querySelector('.menuburger')
-        const iconeBurger = document.querySelector('iconeburger"')
-        
-        menuBurger.onclick = function(){
-            menuBurger.classList.toogle('ouvert')
-            const ouverture = menuBurger.classList.contains('ouvert')
-            iconeBurger.classList = ouverture ?'fa-solid fa-xmark' : 'fa-solid fa-bars'
-        }
-    </script>
+        let iconeburger = document.getElementById('iconeburger'); 
+        let menuburger = document.getElementById('menuburger');
+        iconeburger.addEventListener("click", function() {  
+            if (menuburger.style.display === "none") {
+            menuburger.style.display = "block";
+            iconeburger.innerHTML = '<img src="./images/icone-croix.png" alt="icône croix"/>';
+            } else {
+            menuburger.style.display = "none"; 
+            iconeburger.innerHTML ='<img src="./images/iconmenuburger.png" alt="icône menu burger"/>';
+            }
+        });
+</script>
+
 </body>
 </html>
 

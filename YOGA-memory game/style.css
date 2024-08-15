@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.conteneur {
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #6a9864;
+    padding-top: 5px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.conteneur {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
+
+
+
+button {
+    height: 90px;
+    width: 90px;
+    margin: 5px;
+}
+

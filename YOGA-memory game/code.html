@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOGA - Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="conteneur">
+        <h1>Yoga</h1>
+        <h2>Memory Game</h2>
+        <main>
+            <div class="ligne1">
+                <div class="carte" id="carte1"><img src="./images/chien-haut.png" alt=""></div>
+                <div class="carte" id="carte2"><img src="./images/enfant.png" alt=""></div>
+                <div class="carte" id="carte3"><img src="./images/guerrier2.png" alt=""></div>
+                <div class="carte" id="carte4"><img src="./images/guirlande.png" alt=""></div>
+                <div class="carte" id="carte5"><img src="./images/lotus.png" alt=""></div>
+            </div>
+            <div class=" ligne2">
+                <div class="carte" id="carte6"><img src="./images/pigeon.png" alt=""></div>
+            <div class="carte" id="carte7"><img src="./images/pince.png" alt=""></div>
+            <div class="carte" id="carte8"><img src="./images/scorpion.png" alt=""></div>
+            <div class="carte" id="carte9"><img src="./images/torsion.png" alt=""></div>
+            <div class="carte" id="carte10"><img src="./images/triangle.png" alt=""></div>
+        </div>
+    </main>
+        <button>Commencer</button>
+        <button>Réinitialiser</button>
+        <button>Stop</button>
+        <button>Musique</button>
+        <button>Quitter</button>
+    </div>
+    
+</body>
+</html>
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.conteneur {
+    height: 100vh;
+    width: 100%;
+}
+
+
+main {
+    height: 80%;
+    width: 100%;
+    background-image: url(./images/1.png);
+    background-size: cover;
+}
+
+h1 {
+    color: beige;
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.932);
+}
+
+.ligne1 {
+    background-color: red;
+height: 20%;
+width: 70%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.ligne2 {
+    background-color: blue;
+height: 20%;
+width: 70%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.carte {
+    height: 300px;
+    width: 300px;
+}
+
+.carte img {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+}

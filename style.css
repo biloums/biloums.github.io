@@ -127,11 +127,11 @@ scale: 1.5;
 
 @keyframes change {
     0% {
-        background-image: url('./images/massage.png');
+        background-image: url('./images/prof.png');
     }
 
     25% {
-    background-image: url('./images/prof.png');
+    background-image: url('./images/massage.png');
     }  
     
     50% {

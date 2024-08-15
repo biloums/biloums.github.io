@@ -80,7 +80,7 @@ nav {
 }
 
 /* menu burger */
-.iconeburger img {
+#iconeburger img {
     height: 30px;
     width: 30px;
     position: absolute;
@@ -89,20 +89,19 @@ nav {
     display: none;
 }
 
-/* objectif height = 0 pur qu'il disparait et réapparait avec la class ouverture */
-.menuburger {
+#menuburger {
     background-color: #c90808b2;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
     width: 130px;
     border-radius: 15px;
     flex-direction: column;
     position: absolute;
     right: 85px;
     top: 80px;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: none;
 }
 
-.menuburger a {
+#menuburger a {
 text-decoration: none;
 color: var(--blanc);
 font-family: "Inter", sans-serif;
@@ -113,12 +112,8 @@ align-items: center;
 justify-content: center;
 }
 
-.icone-burger, .menuburger {
+#icone-burger {
     display: none;
-}
-
-.menuburger .ouverture {
-    height: 185px;
 }
 
 /* Eléments du conteneur droit */
@@ -523,8 +518,8 @@ footer{
         display: none;
     }
 
-/* mernu burger */
-    .iconeburger img, .menuburger {
+/* menu burger */
+    #iconeburger img {
         display: block;
     }
 
@@ -533,8 +528,8 @@ footer{
     }
 
     .sonia-dev {
-        font-size: small;
         margin:25px;
+        font-size: medium;
     }
 
     .conteneur-gauche {
