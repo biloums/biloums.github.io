@@ -1,6 +1,6 @@
 /* stylisation générale*/
 :root {
-    --noir :#130E0A;
+    --noir :#050200;
     --rouge :#E50914;
     --blanc: #FBFCFA;
     --gris : #2D2D2D;
@@ -21,7 +21,7 @@ html {
     scroll-behavior: smooth;
 }
 
-p, .nav a, .liens-contact a, .btn-nav, h2,h4, label {
+p, .nav a, .liens-contact a, .btn-nav, h2,h4, label, #subject {
     color: var(--blanc);
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -278,7 +278,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} 
 
 /* Section "compétences" */
 .competences {
@@ -356,8 +356,7 @@ background-color: var(--noir);
     font-size: 280px;
     position: absolute;
     right: 144px;
-    bottom: -58px;
-    
+    bottom: -58px;   
 }
 
 #p2::before {
