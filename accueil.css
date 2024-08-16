@@ -284,41 +284,37 @@ h2 {
 .competences {
     height: 45vh;
     width: 100%;
-    background-color:var(--noir);
+    background-color: var(--noir);
 }
 
-@keyframes  scroll{
-    0%{
-        transform:translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-100px * 2));
-    }
-    }
+.carrousel {
+    height: 200px; /* Ajusté à la hauteur des images */
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--noir);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carrousel .automatique {
+    display: flex;
+    width: calc(200px * 40); /* Double du nombre d'images pour permettre la boucle */
+    animation: scroll 18s linear infinite;
+}
 
 .carrousel img {
     height: 200px;
     width: 200px;
 }
 
-.carrousel {
-    height: 180px;
-    width: auto;
-    position: relative;
-    overflow: hidden;
-    background-color: var(--noir);
-    margin-bottom: 40px;
-}
-
-.carrousel .automatique {
-    animation: scroll 5s linear infinite;
-    display: flex;
-width: calc(200px * 20);
-}
-
-.carrousel .slide {
-    height: 100px;
-    width: 250px;
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* section "projets */
@@ -529,7 +525,7 @@ footer{
 
     .sonia-dev {
         margin:25px;
-        font-size: medium;
+        font-size: small;
     }
 
     .conteneur-gauche {
@@ -613,5 +609,4 @@ footer{
 
 
 
-/*comment faire retour à la ligne conteneur 1 et 2 projets et menu burger */
-
+/*comment faire retour à la ligne conteneur 1 et 2 projets 
