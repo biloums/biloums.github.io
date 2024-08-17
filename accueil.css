@@ -112,10 +112,6 @@ align-items: center;
 justify-content: center;
 }
 
-#icone-burger {
-    display: none;
-}
-
 /* Eléments du conteneur droit */
 .conteneur-droit {
     height: 85vh;

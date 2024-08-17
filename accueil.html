@@ -156,17 +156,20 @@
         <div class="copyright"><p>&copy;Sonia BOLIVARD - 2024</p></div>
     </footer>
     <script>
-        let iconeburger = document.getElementById('iconeburger'); 
-        let menuburger = document.getElementById('menuburger');
-        iconeburger.addEventListener("click", function() {  
-            if (menuburger.style.display === "none") {
+        document.addEventListener('DOMContentLoaded', function() {
+    let iconeburger = document.getElementById('iconeburger'); 
+    let menuburger = document.getElementById('menuburger');
+
+    iconeburger.addEventListener("click", function() {  
+        if (menuburger.style.display === "none" || menuburger.style.display === "") {
             menuburger.style.display = "block";
             iconeburger.innerHTML = '<img src="./images/icone-croix.png" alt="icône croix"/>';
-            } else {
+        } else {
             menuburger.style.display = "none"; 
-            iconeburger.innerHTML ='<img src="./images/iconmenuburger.png" alt="icône menu burger"/>';
-            }
-        });
+            iconeburger.innerHTML = '<img src="./images/iconmenuburger.png" alt="icône menu burger"/>';
+        }
+    });
+});
 </script>
 
 </body>
